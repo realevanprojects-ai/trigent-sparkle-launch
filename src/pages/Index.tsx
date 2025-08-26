@@ -7,6 +7,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import DemoSection from "@/components/DemoSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <DemoSection />
       <FAQSection />
       <CTASection />
+      <Footer />
     </div>
   );
 };
