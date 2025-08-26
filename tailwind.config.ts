@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'trigent-purple': 'hsl(var(--trigent-purple))',
+				'trigent-orange': 'hsl(var(--trigent-orange))',
+				'trigent-blue': 'hsl(var(--trigent-blue))',
+				'trigent-cyan': 'hsl(var(--trigent-cyan))',
+				'trigent-dark': 'hsl(var(--trigent-dark))',
+				'trigent-card': 'hsl(var(--trigent-card))',
+				'trigent-border': 'hsl(var(--trigent-border))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
