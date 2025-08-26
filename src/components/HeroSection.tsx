@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import AnimatedAgentText from "./AnimatedAgentText";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
       <div className="container mx-auto text-center max-w-5xl relative z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
           <span className="text-foreground drop-shadow-[0_0_20px_hsl(var(--neon-pink))]">Trigent </span>
-          <span className="text-neon-pink drop-shadow-[0_0_30px_hsl(var(--neon-pink))]">AI — Automation & Efficiency Agent</span>
+          <AnimatedAgentText />
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
           TrigentAI's three specialized agents eliminate the financial leaks, time drains, and growth barriers that keep your business stuck. Get measurable results in 30 days.
