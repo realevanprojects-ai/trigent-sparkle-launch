@@ -46,9 +46,9 @@ All colors MUST be HSL.
     --neon-glow: linear-gradient(135deg, hsl(326, 100%, 54%), hsl(269, 100%, 50%), hsl(252, 100%, 50%));
     
     /* Custom colors for TrigentAI - Specific brand colors */
-    --trigent-bi: 253 94% 50%; /* #390bf2 */
-    --trigent-ai: 8 97% 65%; /* #fd674d */
-    --trigent-gx: 283 91% 34%; /* #7d0da0 */
+    --trigent-bi: 253 94% 50%; /* #390bf2 - Bright Blue */
+    --trigent-ai: 8 97% 65%; /* #fd674d - Vibrant Coral/Orange-Red */
+    --trigent-gx: 283 91% 34%; /* #7d0da0 - Royal Purple */
     --trigent-purple: 269 100% 50%;
     --trigent-orange: 20 100% 60%;
     --trigent-orange-glow: 20 100% 60%;
