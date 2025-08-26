@@ -9,10 +9,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--neon-pink)_/_0.1)_0%,transparent_50%)]" />
       
       <div className="container mx-auto text-center max-w-5xl relative z-10">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-          <span className="text-foreground drop-shadow-[0_0_20px_hsl(var(--neon-pink))]">Trigent </span>
-          <AnimatedAgentText />
-        </h1>
+        <div className="text-center mb-8">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight">
+            <span className="text-foreground drop-shadow-[0_0_20px_hsl(var(--neon-pink))]">Trigent</span>
+          </h1>
+          <div className="text-3xl md:text-5xl lg:text-6xl font-bold">
+            <AnimatedAgentText />
+          </div>
+        </div>
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
           TrigentAI's three specialized agents eliminate the financial leaks, time drains, and growth barriers that keep your business stuck. Get measurable results in 30 days.
         </p>
