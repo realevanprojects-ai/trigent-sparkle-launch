@@ -51,11 +51,18 @@ export function WebGLShader() {
         float gx = p.x;
         float bx = p.x * (1.0 - d);
 
-        float r = 0.05 / abs(p.y + sin((rx + time) * xScale) * yScale);
-        float g = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);
-        float b = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);
+        // Custom color waves: #390bf2, #fd674d, #7d0da0
+        float wave1 = 0.05 / abs(p.y + sin((rx + time) * xScale) * yScale);
+        float wave2 = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);
+        float wave3 = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);
         
-        gl_FragColor = vec4(r, g, b, 1.0);
+        vec3 color1 = vec3(0.224, 0.043, 0.949); // #390bf2
+        vec3 color2 = vec3(0.992, 0.404, 0.302); // #fd674d  
+        vec3 color3 = vec3(0.490, 0.051, 0.627); // #7d0da0
+        
+        vec3 finalColor = wave1 * color1 + wave2 * color2 + wave3 * color3;
+        
+        gl_FragColor = vec4(finalColor, 1.0);
       }
     `
 
