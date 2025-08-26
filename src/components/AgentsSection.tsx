@@ -6,8 +6,8 @@ const AgentsSection = () => {
     {
       name: "Trigent BI",
       subtitle: "Business Intelligence Agent",
-      color: "trigent-purple",
-      buttonColor: "bg-trigent-purple hover:bg-trigent-purple/90",
+      color: "trigent-bi",
+      buttonColor: "bg-trigent-bi hover:bg-trigent-bi/90",
       problem: "87% of SMBs lose $50K+ annually to operational waste like late fees, duplicate subscriptions, overdue invoices, inefficient processes, bleeding cash daily.",
       solution: "Scans your entire operation, identifies every money leak, and creates a prioritized action plan that stops financial hemorrhaging within 30 days.",
       benefits: [
@@ -21,8 +21,8 @@ const AgentsSection = () => {
     {
       name: "Trigent AI",
       subtitle: "Automation & Efficiency Agent",
-      color: "trigent-orange",
-      buttonColor: "bg-trigent-orange hover:bg-trigent-orange/90",
+      color: "trigent-ai",
+      buttonColor: "bg-trigent-ai hover:bg-trigent-ai/90",
       problem: "Your team wastes 60% of its time on repetitive tasks, manual follow-ups, and administrative overhead that adds zero value to your business growth.",
       solution: "Eliminates repetitive work through intelligent automation, streamlines workflows, and ensures your team focuses only on revenue-generating activities.",
       benefits: [
@@ -36,8 +36,8 @@ const AgentsSection = () => {
     {
       name: "Trigent GX",
       subtitle: "Growth Acceleration Agent",
-      color: "trigent-blue",
-      buttonColor: "bg-trigent-blue hover:bg-trigent-blue/90",
+      color: "trigent-gx",
+      buttonColor: "bg-trigent-gx hover:bg-trigent-gx/90",
       problem: "Your marketing generates leads that don't convert because your message is unclear, your customer journey is broken, and prospects can't understand your value.",
       solution: "Creates crystal-clear positioning, optimizes every customer touchpoint, and builds conversion systems that turn more prospects into profitable, long-term clients.",
       benefits: [

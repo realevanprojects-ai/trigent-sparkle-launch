@@ -52,6 +52,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'trigent-bi': 'hsl(var(--trigent-bi))',
+				'trigent-ai': 'hsl(var(--trigent-ai))',
+				'trigent-gx': 'hsl(var(--trigent-gx))',
 				'trigent-purple': 'hsl(var(--trigent-purple))',
 				'trigent-orange': 'hsl(var(--trigent-orange))',
 				'trigent-blue': 'hsl(var(--trigent-blue))',
