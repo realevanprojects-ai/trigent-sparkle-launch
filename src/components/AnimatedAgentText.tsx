@@ -7,32 +7,24 @@ const AnimatedAgentText = () => {
     "AI — Automation & Efficiency Agent"
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false);
-      
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % agents.length);
-        setIsVisible(true);
-      }, 300);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [agents.length]);
-
   return (
-    <span 
-      className={`text-neon-pink drop-shadow-[0_0_30px_hsl(var(--neon-pink))] transition-all duration-500 ease-in-out transform ${
-        isVisible 
-          ? 'opacity-100 translate-x-0 scale-100' 
-          : 'opacity-0 translate-x-4 scale-95'
-      }`}
-    >
-      {agents[currentIndex]}
-    </span>
+    <div className="flex flex-col md:flex-row md:gap-2 items-center justify-center">
+      {agents.map((agent, index) => (
+        <span 
+          key={agent}
+          className={`text-neon-pink drop-shadow-[0_0_30px_hsl(var(--neon-pink))] 
+                     animate-fade-in transition-all duration-700 ease-out
+                     hover:scale-105 hover:drop-shadow-[0_0_40px_hsl(var(--neon-pink))]`}
+          style={{
+            animationDelay: `${index * 0.5}s`,
+            animationFillMode: 'both'
+          }}
+        >
+          {agent}
+          {index < agents.length - 1 && <span className="hidden md:inline text-muted-foreground mx-2">•</span>}
+        </span>
+      ))}
+    </div>
   );
 };
 
