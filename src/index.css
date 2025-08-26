@@ -8,44 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 15% 8%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 15% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 233 86% 7%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 15% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 233 86% 7%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 100% 69%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 252 100% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 233 86% 7%;
+    --muted-foreground: 0 0% 69%;
 
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 252 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 262 83% 58%;
+    --border: 233 86% 15%;
+    --input: 233 86% 15%;
+    --ring: 252 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom colors for TrigentAI */
-    --trigent-purple: 262 83% 58%;
-    --trigent-orange: 15 100% 65%;
-    --trigent-blue: 220 70% 50%;
+    /* Neon color palette */
+    --neon-pink: 340 100% 69%; /* #ff005b */
+    --electric-blue: 252 100% 50%; /* #2600ff */
+    --bright-magenta: 326 100% 54%; /* #ff0087 */
+    --vivid-violet: 269 100% 50%; /* #a300ff */
+    --neon-glow: linear-gradient(135deg, hsl(326, 100%, 54%), hsl(269, 100%, 50%), hsl(252, 100%, 50%));
+    
+    /* Custom colors for TrigentAI - Updated to neon palette */
+    --trigent-purple: 269 100% 50%;
+    --trigent-orange: 340 100% 69%;
+    --trigent-blue: 252 100% 50%;
     --trigent-cyan: 180 100% 70%;
-    --trigent-dark: 220 15% 8%;
-    --trigent-card: 220 15% 12%;
-    --trigent-border: 220 15% 20%;
+    --trigent-dark: 0 0% 0%;
+    --trigent-card: 233 86% 7%;
+    --trigent-border: 233 86% 15%;
 
     --sidebar-background: 0 0% 98%;
 
