@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 const AnimatedAgentText = () => {
   const agents = [
-    "AI Automation & Efficiency Agent",
-    "BI A Business Intelligence Agent", 
-    "GX Growth Acceleration Agent"
+    { text: "AI Automation & Efficiency Agent", color: "trigent-ai" },
+    { text: "BI Business Intelligence Agent", color: "trigent-bi" }, 
+    { text: "GX Growth Acceleration Agent", color: "trigent-gx" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,13 +23,19 @@ const AnimatedAgentText = () => {
     return () => clearInterval(interval);
   }, [agents.length]);
 
+  const currentAgent = agents[currentIndex];
+  
   return (
     <span 
-      className={`text-neon-pink drop-shadow-[0_0_30px_hsl(var(--neon-pink))] transition-all duration-300 ${
+      className={`transition-all duration-300 ${
         isVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-2'
       }`}
+      style={{
+        color: `hsl(var(--${currentAgent.color}))`,
+        textShadow: `0 0 30px hsl(var(--${currentAgent.color}))`
+      }}
     >
-      {agents[currentIndex]}
+      {currentAgent.text}
     </span>
   );
 };

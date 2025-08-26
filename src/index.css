@@ -45,7 +45,10 @@ All colors MUST be HSL.
     --vivid-violet: 269 100% 50%; /* #a300ff */
     --neon-glow: linear-gradient(135deg, hsl(326, 100%, 54%), hsl(269, 100%, 50%), hsl(252, 100%, 50%));
     
-    /* Custom colors for TrigentAI - Updated to neon palette */
+    /* Custom colors for TrigentAI - Agent specific colors */
+    --trigent-ai: 9 97% 65%; /* #fd674d */
+    --trigent-bi: 250 91% 50%; /* #390bf2 */
+    --trigent-gx: 287 88% 34%; /* #7d0da0 */
     --trigent-purple: 269 100% 50%;
     --trigent-orange: 20 100% 60%;
     --trigent-orange-glow: 20 100% 60%;
