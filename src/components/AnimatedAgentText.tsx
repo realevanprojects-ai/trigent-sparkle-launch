@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 const AnimatedAgentText = () => {
   const agents = [
-    "AI — Automation & Efficiency Agent",
-    "BI — A Business Intelligence Agent", 
-    "GX — Growth Acceleration Agent"
+    "AI Automation & Efficiency Agent",
+    "BI A Business Intelligence Agent", 
+    "GX Growth Acceleration Agent"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
