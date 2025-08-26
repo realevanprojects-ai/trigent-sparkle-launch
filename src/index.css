@@ -47,7 +47,8 @@ All colors MUST be HSL.
     
     /* Custom colors for TrigentAI - Updated to neon palette */
     --trigent-purple: 269 100% 50%;
-    --trigent-orange: 340 100% 69%;
+    --trigent-orange: 20 100% 60%;
+    --trigent-orange-glow: 20 100% 60%;
     --trigent-blue: 252 100% 50%;
     --trigent-cyan: 180 100% 70%;
     --trigent-dark: 0 0% 0%;

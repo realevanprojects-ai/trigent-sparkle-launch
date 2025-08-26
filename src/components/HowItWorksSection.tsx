@@ -37,7 +37,10 @@ const HowItWorksSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {steps.map((step, index) => (
             <div key={index} className="text-center">
-              <div className="text-6xl font-bold text-trigent-cyan mb-4">
+              <div className="text-6xl font-bold mb-4" style={{ 
+                color: 'hsl(var(--trigent-orange))', 
+                textShadow: '0 0 20px hsl(var(--trigent-orange-glow) / 0.8), 0 0 40px hsl(var(--trigent-orange-glow) / 0.6)' 
+              }}>
                 {step.number}
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">
