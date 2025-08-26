@@ -1,26 +1,24 @@
-import { WebGLShader } from "@/components/ui/web-gl-shader";
-import { LiquidButton } from '@/components/ui/liquid-glass-button';
+import { Button } from "@/components/ui/button";
+
 const HeroSection = () => {
-  return <div className="relative flex w-full flex-col items-center justify-center overflow-hidden min-h-screen">
-      <WebGLShader /> 
-      <div className="relative border border-[#27272a] p-2 w-full mx-auto max-w-3xl">
-        <main className="relative border border-[#27272a] py-10 overflow-hidden">
-          <h1 className="mb-3 text-white text-center text-7xl font-extrabold tracking-tighter md:text-[clamp(2rem,8vw,7rem)]">Trigent</h1>
-          <p className="text-white/60 px-6 text-center text-xs md:text-sm lg:text-lg">
+  return (
+    <section className="relative min-h-screen flex items-center justify-center bg-background px-4">
+      <div className="container mx-auto text-center max-w-4xl">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight">
+          Three Specialized AI Agents That Solve Real Problems
+        </h1>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Stop treating symptoms. Each TrigentAI agent attacks the root cause of what's actually costing you money, time, and growth.
         </p>
-          <div className="my-8 flex items-center justify-center gap-1">
-            <span className="relative flex h-3 w-3 items-center justify-center">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
-            </span>
-            <p className="text-xs text-green-500">Available for New Projects</p>
-          </div>
-          
-          <div className="flex justify-center"> 
-            <LiquidButton className="text-white border rounded-full" size={'xl'}>Let's Go</LiquidButton> 
-          </div> 
-        </main>
+        <Button 
+          size="lg" 
+          className="bg-trigent-purple hover:bg-trigent-purple/90 text-white px-8 py-6 text-lg font-semibold rounded-xl"
+        >
+          Book a Demo with an Expert
+        </Button>
       </div>
-    </div>;
+    </section>
+  );
 };
+
 export default HeroSection;
