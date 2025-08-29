@@ -11,8 +11,11 @@ const CTASection = () => {
         <Button 
           size="lg" 
           className="bg-trigent-purple hover:bg-trigent-purple/90 text-white px-12 py-8 text-xl font-semibold rounded-xl"
+          asChild
         >
-          Book a Demo with an Expert
+          <a href="https://cal.com/evanrios/ai-automation-strategy-call-trigentai" target="_blank" rel="noopener noreferrer">
+            Book a Demo with an Expert
+          </a>
         </Button>
       </div>
     </section>
