@@ -94,7 +94,7 @@ const AgentsSection = () => {
                   className={`w-full ${agent.buttonColor} text-white font-semibold py-6 rounded-xl`}
                   asChild
                 >
-                  <a href="https://cal.com/evanrios/ai-automation-strategy-call-trigentai" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cal.com/trigentai/ai-automation-strategy-call-trigentai" target="_blank" rel="noopener noreferrer">
                     Get {agent.name} Now
                   </a>
                 </Button>

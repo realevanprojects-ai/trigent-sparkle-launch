@@ -26,7 +26,7 @@ const HeroSection = () => {
             className="bg-neon-pink hover:bg-gradient-to-r hover:from-neon-pink hover:to-electric-blue text-white px-8 py-6 text-lg font-semibold rounded-xl min-w-[200px] shadow-[0_0_30px_hsl(var(--neon-pink)_/_0.5)] hover:shadow-[0_0_40px_hsl(var(--neon-pink)_/_0.7)] transition-all duration-300"
             asChild
           >
-            <a href="https://cal.com/evanrios/ai-automation-strategy-call-trigentai" target="_blank" rel="noopener noreferrer">
+            <a href="https://cal.com/trigentai/ai-automation-strategy-call-trigentai" target="_blank" rel="noopener noreferrer">
               Book a Demo with an Expert
             </a>
           </Button>
